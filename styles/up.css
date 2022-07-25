@@ -1,0 +1,80 @@
+/* 상단 프로필 */
+.profile{
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: white;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px 10px 0px 0px;
+}
+.profile-info{
+  width: 396px;
+  flex: 1;
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  vertical-align: top;
+}
+.profile-info >*{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 0px 10px 0px;
+  
+}
+.profile-info h3{
+  font-size: 18pt;
+  letter-spacing: 10px;
+  padding-left: 25px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+}
+.profile-info h4:nth-child(2){
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+.profile-info h4{
+  padding-left: 10px;
+}
+
+.interest{
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  padding-top: 2px;
+  padding-left: 10px;
+}
+.interest >*{
+  border: 1px solid red;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.profile-img{
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  display: inline-block;
+  object-fit: cover;
+  object-position: center;
+  box-sizing: border-box;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+
+/* 상단 자기소개 */
+.introduce-kr{
+  margin-top: -1px;
+  margin-bottom: 20px;
+  padding: 25px 30px 25px 30px;
+  background-color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 13pt;
+  line-height: 145%;
+  border: 1px solid red;
+  border-radius: 0px 0px 10px 10px;
+  box-sizing: border-box;
+}
+.introduce-en{
+  display: none;
+}

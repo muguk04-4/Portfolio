@@ -1,0 +1,18 @@
+body{
+  background-color: white;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 550px;
+  max-width: 700px;
+}
+
+
+/* 부여용 클래스 */
+.hidden{
+  display: none;
+}
