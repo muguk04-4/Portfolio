@@ -1,94 +1,81 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Who am I</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/up.css">
+    <link rel="stylesheet" href="styles/down.css">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Who am I</title>
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/up.css">
-  <link rel="stylesheet" href="styles/down.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <div class="profile">
-      <div class="profile-info">
-        <h3>이승빈</h3>
-        <h4>Developer beginner</h4>
-        <h4>관심분야</h4>
-        <div class="interest">
-          <span>Web front-end</span>
-          <span>Game design</span>
-          <span>3D Model</span>
-          <span>Android developement</span>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-info">
+          <h3>이승빈</h3>
+          <h4>Developer beginner</h4>
+          <h4>관심분야</h4>
+          <div class="interest">
+            <span>Web front-end</span>
+            <span>Game design</span>
+            <span>3D Model</span>
+            <span>Android developement</span>
+          </div>
         </div>
+        <img class="profile-img" src="img/will_be.png">
       </div>
-      <img class="profile-img" src="img/will_be.png">
+      
+      <div class="introduce-kr">
+        안녕하세요. 저는 웹 프론트엔드를 공부하고 있는 이승빈입니다. 그 외에도 여러 분야 공부해보았습니다.
+      </div>
+
+      <div class="introduce-en">
+        Hello, I'm Seungbin Lee. I major in computer engineering in South Korea. I interest in front-end Web and game design. also I can make 3D models with blender.
+      </div>
+
+      <div class="work-category">
+        <ul>
+          <li onclick="web()">Web</li>
+          <li onclick="game()">Game</li>
+          <li onclick="model()">3D Modeling</li>
+          <li onclick="android()">Android</li>
+          <li></li>
+        </ul>
+        <div id="works" class="works">
+          <!-- js/app.js에 구현되어 있음-->
+          
+        </div>
+      </div> 
+
+      <div class="contact">
+        <span><img class="icon" src="img/icons/tel.png">Tel : 010-2979-1699</span>      
+        <span><img class="icon" src="img/icons/email.png">E-mail : garuru7080@gmail.com</span>
+
+        <div class="sns">
+          <a href="https://github.com/muguk04-4" target="_blank">
+            <img class="icon2" src="img/icons/github.png">
+            <span>github</span>
+          </a>
+
+          <a href="https://www.instagram.com/muguk04/" target="_blank">
+            <img class="icon2" src="img/icons/insta.png">
+            <span>instagram</span>
+          </a>
+        </div> 
+      </div>
+
+    </div> 
+    
+    <div class="footer">
+      <h4>
+        last modified date : 2022.07.?? / made by Seungbin Lee
+      </h4> 
     </div>
     
-    <div class="introduce-kr">
-      안녕하세요. 저는 웹 프론트엔드를 공부하고 있는 이승빈입니다. 그 외에도 여러 분야 공부해보았습니다.
-    </div>
-
-    <div class="introduce-en">
-      Hello, I'm Seungbin Lee. I major in computer engineering in South Korea. I interest in front-end Web and game design. also I can make 3D models with blender.
-    </div>
-
-    <div class="work-category">
-      <ul>
-        <li onclick="web()">Web</li>
-        <li onclick="game()">Game</li>
-        <li onclick="model()">3D Modeling</li>
-        <li onclick="android()">Android</li>
-        <li></li>
-      </ul>
-      <div id="works" class="works">
-        <div id="workName" class="work-name">
-          작업 이름
-        </div>
-        <div class="work-img">
-          <div class="left-change" onclick="imageChangeLeft()"></div>
-          <div class="right-change" onclick="imageChangeRight()"></div>
-          <img id="workImg" src="img/work_img/woork.png">
-        </div>
-
-        <div id="workInfo" class="work-info">
-          블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
-        </div>
-      </div>
-    </div> 
-
-    <div class="contact">
-      <span><img class="icon" src="img/icons/tel.png">Tel : 010-2979-1699</span>      
-      <span><img class="icon" src="img/icons/email.png">E-mail : garuru7080@gmail.com</span>
-
-      <div class="sns">
-        <a href="https://github.com/muguk04-4" target="_blank">
-          <img class="icon2" src="img/icons/github.png">
-          <span>github</span>
-        </a>
-
-        <a href="https://www.instagram.com/muguk04/" target="_blank">
-          <img class="icon2" src="img/icons/insta.png">
-          <span>instagram</span>
-        </a>
-      </div> 
-    </div>
-
-  </div> 
-  
-  <div class="footer">
-    <h4>
-      last modified date : 2022.07.?? / made by Seungbin Lee
-    </h4> 
-  </div>
-  
-  <script src="app.js"></script>
-</body>
-
+    <script src="js/app.js"></script>
+  </body>
 </html>

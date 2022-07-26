@@ -143,6 +143,9 @@
   margin: 5px;
   text-decoration: none;
 }
+.sns a:link{
+  text-decoration: none;
+}
 
 
 /* 하단 버전 바 */

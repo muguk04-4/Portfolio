@@ -38,7 +38,37 @@ const imgChangeLeft = () => {
 const workRender = () =>{
   const works = document.getElementById('works');
 
+  const workName = document.createElement('div');
+  workName.id = 'workName';
+  workName.className = 'work-name';
+  workName.innerText = '작업 이름';
+  works.appendChild(workName);
+
+  const workImg = document.createElement('div');
+  workImg.className = 'work-img';
+  const leftChange = document.createElement('div');
+  leftChange.className = 'left-change';
+  leftChange.onclick = imgChangeLeft;
+  workImg.appendChild(leftChange);
+  const rightChange = document.createElement('div');
+  rightChange.className = 'right-change';
+  rightChange.onclick = imgChangeRight;
+  workImg.appendChild(rightChange);
+  const img = document.createElement('img');
+  img.id = 'workImg';
+  img.src = 'img/work_img/woork.png';
+  workImg.appendChild(img);
+  works.appendChild(workImg);
+
+  const workInfo = document.createElement('div');
+  workInfo.id = 'workInfo';
+  workInfo.className = 'work-info';
+  workInfo.innerText = '3';
+  works.appendChild(workInfo);
+
+
   // const workName = document.getElementById('workName');
   // const workImg = document.getElementById('workImg');
   // const workInfo = document.getElementById('workInfo'); 
 }
+workRender();
