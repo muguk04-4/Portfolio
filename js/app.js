@@ -6,11 +6,40 @@ const webData = [{
   workName: '로스트아크 길드매니저',
   workImg: ['img/work_img/web/lostark_guildmanager1.jpg'],
   workInfo: '이것은 로아 길드매니저',
- 
 }, {
   workName: '워프레임 정보 페이지',
   workImg: ['img/work_img/web/warframe1.jpg', 'img/work_img/web/warframe2.jpg', 'img/work_img/web/warframe3.jpg'],
   workInfo: '이것은 워프레임 페이지',
+}];
+
+const gameData = [{
+  workName: 'Rewot',
+  workImg: ['img/work_img/game/rewot1.png', 'img/work_img/game/rewot2.png', 'img/work_img/game/rewot3.png', 'img/work_img/game/rewot4.png'],
+  workInfo: '이것은 리웟',
+}, {
+  workName: 'Loveholics',
+  workImg: ['img/work_img/game/loveholics1.jpg', 'img/work_img/game/loveholics2.jpg', 'img/work_img/game/loveholics3.jpg'],
+  workInfo: '이것은 러브 홀릭스',
+}, {
+  workName: 'Aquares',
+  workImg: ['img/work_img/game/aquares1.png', 'img/work_img/game/aquares2.png', 'img/work_img/game/aquares3.png', 'img/work_img/game/aquares4.png'],
+  workInfo: '이것은 아쿠아레스',
+}];
+
+const modelData = [{
+  workName: 'rewot의 모델링',
+  workImg: ['img/work_img/model/model_rewot1.png', 'img/work_img/model/model_rewot2.png', 'img/work_img/model/model_rewot3.png', 'img/work_img/model/model_rewot4.png'],
+  workInfo: '이것은 모델링 리웟',
+}, {
+  workName: 'Aquares의 모델링',
+  workImg: ['img/work_img/model/model_aquares1.png', 'img/work_img/model/model_aquares2.png', 'img/work_img/model/model_aquares3.png'],
+  workInfo: '이것은 모델링 아쿠아레스',
+}];
+
+const androidData = [{
+  workName: '마침표',
+  workImg: ['img/work_img/android/machim1.png', 'img/work_img/android/machim2.png', 'img/work_img/android/machim3.png', 'img/work_img/android/machim4.png'],
+  workInfo: '이것은 마침표 어플',
 }];
 
 // Controller ------------------------
