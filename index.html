@@ -29,20 +29,22 @@
         <img class="profile-img" src="img/profile.png">
       </div>
       
-      <div class="introduce-kr">
-        안녕하세요. 저는 웹 프론트엔드를 공부하고 있는 이승빈입니다. 그 외에도 여러 분야 공부해보았습니다.
-      </div>
-
-      <div class="introduce-en">
-        Hello, I'm Seungbin Lee. I major in computer engineering in South Korea. I interest in front-end Web and game design. also I can make 3D models with blender.
+      <div class="introduce">
+        <button id="bt" onclick="introTranslate()">Eng</button>
+        <p id="introKr" class="intro-kr">
+          안녕하세요. 저는 웹 프론트엔드를 공부하고 있는 이승빈입니다. 그 외에도 앱이나 게임 디자인, 모델링에도 관심을 가지고 있습니다.
+        </p>
+        <p id="introEn" class="intro-en hidden">
+          Hello, I'm Seungbin Lee. I major in computer engineering in South Korea. I interest in front-end Web and game design. also I can make 3D models with Blender.
+        </p> 
       </div>
 
       <div class="work-category">
         <ul>
-          <li onclick="web()">Web</li>
-          <li onclick="game()">Game</li>
-          <li onclick="model()">3D Modeling</li>
-          <li onclick="android()">Android</li>
+          <li id="worksWeb" onclick="web()">Web</li>
+          <li id="worksGame" onclick="game()">Game</li>
+          <li id="worksModel" onclick="model()">3D Modeling</li>
+          <li id="worksAndroid" onclick="android()">Android</li>
           <li></li>
         </ul>
         <div id="works" class="works">

@@ -43,10 +43,25 @@ const androidData = [{
 }];
 
 // Controller ------------------------
+const introTranslate = event =>{
+  const introKr = document.getElementById('introKr');
+  const introEn = document.getElementById('introEn');
+  const button = document.getElementById('bt');
+  if(button.innerText === 'Eng'){
+    introKr.classList.add('hidden');
+    introEn.classList.remove('hidden');
+    button.innerText = 'Kor';
+  } else if(button.innerText === 'Kor'){
+    introEn.classList.add('hidden');
+    introKr.classList.remove('hidden');
+    button.innerText = 'Eng';
+  }
+}
 // C: Change works
 //버튼 입력시 해당 분야의
 //제목, 사진, 내용 랜더링
 const web = () => {
+  const workTab = document.getElementById('worksWeb');
   workRender();
 }
 const game = () => {
@@ -63,10 +78,10 @@ const android = () => {
 // 어떤 배열인지는 이벤트로 받아야 할지도?
 // 제일 마지막에 할 이벤트처리
 const imgChangeRight = () => {
-
+  console.log('오른쪽으로');
 }
 const imgChangeLeft = () => {
-
+  console.log('왼쪽으로');
 }
 
 
@@ -74,37 +89,37 @@ const imgChangeLeft = () => {
 // 기본은 웹으로 되어있고 다른 분야 클릭시 
 // 그 분야 true. 다른 분야 false.
 // true가 된 분야만 보여주기.
-// workName 이름 중복 바꿔줘야함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// 배열만들어서 위에 처럼 해야할까? 다른 방법으로 works를 구별할 방법은 없을까?
 const workRender = () =>{
   const works = document.getElementById('works');
 
-  const workName = document.createElement('div');
-  workName.id = 'workName';
-  workName.className = 'work-name';
-  workName.innerText = '작업 이름';
-  works.appendChild(workName);
+  const spaceWorkName = document.createElement('div');
+  spaceWorkName.id = 'workName';
+  spaceWorkName.className = 'work-name';
+  spaceWorkName.innerText = '작업 이름';
+  works.appendChild(spaceWorkName);
 
-  const workImg = document.createElement('div');
-  workImg.className = 'work-img';
+  const spaceWorkImg = document.createElement('div');
+  spaceWorkImg.className = 'work-img';
   const leftChange = document.createElement('div');
   leftChange.className = 'left-change';
   leftChange.onclick = imgChangeLeft;
-  workImg.appendChild(leftChange);
+  spaceWorkImg.appendChild(leftChange);
   const rightChange = document.createElement('div');
   rightChange.className = 'right-change';
   rightChange.onclick = imgChangeRight;
-  workImg.appendChild(rightChange);
+  spaceWorkImg.appendChild(rightChange);
   const img = document.createElement('img');
   img.id = 'workImg';
   img.src = 'img/work_img/web/lostark_guildmanager1.jpg';
-  workImg.appendChild(img);
-  works.appendChild(workImg);
+  spaceWorkImg.appendChild(img);
+  works.appendChild(spaceWorkImg);
 
-  const workInfo = document.createElement('div');
-  workInfo.id = 'workInfo';
-  workInfo.className = 'work-info';
-  workInfo.innerText = '3';
-  works.appendChild(workInfo);
+  const spaceWorkInfo = document.createElement('div');
+  spaceWorkInfo.id = 'workInfo';
+  spaceWorkInfo.className = 'work-info';
+  spaceWorkInfo.innerText = '3';
+  works.appendChild(spaceWorkInfo);
 
 
   // const workName = document.getElementById('workName');
