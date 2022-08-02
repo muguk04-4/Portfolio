@@ -77,13 +77,29 @@
   height: 100%;
   z-index: 10;
   position: absolute;
+  opacity: 10%;
+  transition: opacity 0.15s;
+  background-image: url("../img/L_arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-change:hover{
+  opacity: 100%;
 }
 .right-change{
   width: 50%;
   height: 100%;
   z-index: 10;
   right: 0;
+  opacity: 10%;
+  transition: opacity 0.15s;
   position: absolute;
+  background-image: url("../img/R_arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right-change:hover{
+  opacity: 100%;
 }
 .work-img img{
   object-fit: contain;
@@ -91,7 +107,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 0;
 }
 .work-info{
   padding: 6px 20px 20px 20px;
