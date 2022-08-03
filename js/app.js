@@ -61,8 +61,10 @@ const introTranslate = event =>{
 //버튼 입력시 해당 분야의
 //제목, 사진, 내용 랜더링
 const web = () => {
+  console.log('dd');
   const workTab = document.getElementById('worksWeb');
-  workRender();
+  workTab.style.backgroundColor = 'aqua';
+  workRender(webData);
 }
 const game = () => {
   workRender();
@@ -90,40 +92,43 @@ const imgChangeLeft = () => {
 // 그 분야 true. 다른 분야 false.
 // true가 된 분야만 보여주기.
 // 배열만들어서 위에 처럼 해야할까? 다른 방법으로 works를 구별할 방법은 없을까?
-const workRender = () =>{
+const workRender = worksData =>{
   const works = document.getElementById('works');
+  works.innerHTML = '';
 
-  const spaceWorkName = document.createElement('div');
-  spaceWorkName.id = 'workName';
-  spaceWorkName.className = 'work-name';
-  spaceWorkName.innerText = '작업 이름';
-  works.appendChild(spaceWorkName);
+  worksData.forEach(workData => {
+    const spaceWorkName = document.createElement('div');
+    //spaceWorkName.id = 'workName';
+    spaceWorkName.className = 'work-name';
+    spaceWorkName.innerText = workData.workName;
+    works.appendChild(spaceWorkName);
 
-  const spaceWorkImg = document.createElement('div');
-  spaceWorkImg.className = 'work-img';
-  const leftChange = document.createElement('div');
-  leftChange.className = 'left-change';
-  leftChange.onclick = imgChangeLeft;
-  spaceWorkImg.appendChild(leftChange);
-  const rightChange = document.createElement('div');
-  rightChange.className = 'right-change';
-  rightChange.onclick = imgChangeRight;
-  spaceWorkImg.appendChild(rightChange);
-  const img = document.createElement('img');
-  img.id = 'workImg';
-  img.src = 'img/work_img/web/lostark_guildmanager1.jpg';
-  spaceWorkImg.appendChild(img);
-  works.appendChild(spaceWorkImg);
+    // 이미지 배열이라서 안뜸. 이걸 풀어줄 무언가가 필요함
+    const spaceWorkImg = document.createElement('div');
+    spaceWorkImg.className = 'work-img';
+    const leftChange = document.createElement('div');
+    leftChange.className = 'left-change';
+    leftChange.onclick = imgChangeLeft;
+    spaceWorkImg.appendChild(leftChange);
+    const rightChange = document.createElement('div');
+    rightChange.className = 'right-change';
+    rightChange.onclick = imgChangeRight;
+    spaceWorkImg.appendChild(rightChange);
+    const img = document.createElement('img');
+    //img.id = 'workImg';
+    img.src = workData.workImg;
+    spaceWorkImg.appendChild(img);
+    works.appendChild(spaceWorkImg);
 
-  const spaceWorkInfo = document.createElement('div');
-  spaceWorkInfo.id = 'workInfo';
-  spaceWorkInfo.className = 'work-info';
-  spaceWorkInfo.innerText = '3';
-  works.appendChild(spaceWorkInfo);
-
-
+    const spaceWorkInfo = document.createElement('div');
+    //spaceWorkInfo.id = 'workInfo';
+    spaceWorkInfo.className = 'work-info';
+    spaceWorkInfo.innerText = workData.workInfo;
+    works.appendChild(spaceWorkInfo);
+  });
+  
   // const workName = document.getElementById('workName');
   // const workImg = document.getElementById('workImg');
   // const workInfo = document.getElementById('workInfo'); 
 }
-workRender();
+web()

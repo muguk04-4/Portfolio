@@ -15,7 +15,6 @@ body{
 .hidden{
   display: none;
 }
-
-.work_up{
+.clicked{
   background-color: aqua;
 }
