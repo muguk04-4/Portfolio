@@ -60,20 +60,40 @@ const introTranslate = event =>{
 // C: Change works
 //버튼 입력시 해당 분야의
 //제목, 사진, 내용 랜더링
+const workTabWeb = document.getElementById('worksWeb');
+const workTabGame = document.getElementById('worksGame');
+const workTabModel = document.getElementById('worksModel');
+const workTabAndroid = document.getElementById('worksAndroid');
+const SELECTED = 'aqua';
+const DESELCTED = 'white';
+// ------------ 이거 추가해야됨 ---------------
 const web = () => {
-  console.log('dd');
-  const workTab = document.getElementById('worksWeb');
-  workTab.style.backgroundColor = 'aqua';
+  workTabWeb.style.backgroundColor = 'aqua';
+  workTabGame.style.backgroundColor = 'white';
+  workTabModel.style.backgroundColor = 'white';
+  workTabAndroid.style.backgroundColor = 'white';
   workRender(webData);
 }
 const game = () => {
-  workRender();
+  workTabWeb.style.backgroundColor = DESELCTED;
+  workTabGame.style.backgroundColor = SELECTED;
+  workTabModel.style.backgroundColor = DESELCTED;
+  workTabAndroid.style.backgroundColor = DESELCTED;
+  workRender(gameData);
 }
 const model = () => {
-  workRender();
+  workTabWeb.style.backgroundColor = 'white';
+  workTabGame.style.backgroundColor = 'white';
+  workTabModel.style.backgroundColor = 'aqua';
+  workTabAndroid.style.backgroundColor = 'white';
+  workRender(modelData);
 }
 const android = () => {
-  workRender();
+  workTabWeb.style.backgroundColor = 'white';
+  workTabGame.style.backgroundColor = 'white';
+  workTabModel.style.backgroundColor = 'white';
+  workTabAndroid.style.backgroundColor = 'aqua';
+  workRender(androidData);
 }
 // C: Change Images
 // 우측 클릭시 배열+1, 좌측 클릭시 배열-1
