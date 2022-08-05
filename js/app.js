@@ -1,7 +1,5 @@
 // Model ------------------------
-// 객체만들어야됨(이미지만 배열로)
-// 여기다 만들어도 되지만 차라리 컨트롤러쪽에 만들어도 되지 않을까
-// 고민중
+// 여기다 만들어도 되지만 차라리 컨트롤러쪽에 만들어도 되지 않을까? 고민중
 const webData = [{
   workName: '로스트아크 길드매니저',
   workImg: ['img/work_img/web/lostark_guildmanager1.jpg'],
@@ -64,14 +62,14 @@ const workTabWeb = document.getElementById('worksWeb');
 const workTabGame = document.getElementById('worksGame');
 const workTabModel = document.getElementById('worksModel');
 const workTabAndroid = document.getElementById('worksAndroid');
-const SELECTED = 'aqua';
+const SELECTED = '#22FF33';
 const DESELCTED = 'white';
 // ------------ 이거 추가해야됨 ---------------
 const web = () => {
-  workTabWeb.style.backgroundColor = 'aqua';
-  workTabGame.style.backgroundColor = 'white';
-  workTabModel.style.backgroundColor = 'white';
-  workTabAndroid.style.backgroundColor = 'white';
+  workTabWeb.style.backgroundColor = SELECTED;
+  workTabGame.style.backgroundColor = DESELCTED;
+  workTabModel.style.backgroundColor = DESELCTED;
+  workTabAndroid.style.backgroundColor = DESELCTED;
   workRender(webData);
 }
 const game = () => {
@@ -82,17 +80,17 @@ const game = () => {
   workRender(gameData);
 }
 const model = () => {
-  workTabWeb.style.backgroundColor = 'white';
-  workTabGame.style.backgroundColor = 'white';
-  workTabModel.style.backgroundColor = 'aqua';
-  workTabAndroid.style.backgroundColor = 'white';
+  workTabWeb.style.backgroundColor = DESELCTED;
+  workTabGame.style.backgroundColor = DESELCTED;
+  workTabModel.style.backgroundColor = SELECTED;
+  workTabAndroid.style.backgroundColor = DESELCTED;
   workRender(modelData);
 }
 const android = () => {
-  workTabWeb.style.backgroundColor = 'white';
-  workTabGame.style.backgroundColor = 'white';
-  workTabModel.style.backgroundColor = 'white';
-  workTabAndroid.style.backgroundColor = 'aqua';
+  workTabWeb.style.backgroundColor = DESELCTED;
+  workTabGame.style.backgroundColor = DESELCTED;
+  workTabModel.style.backgroundColor = DESELCTED;
+  workTabAndroid.style.backgroundColor = SELECTED;
   workRender(androidData);
 }
 // C: Change Images
@@ -108,10 +106,6 @@ const imgChangeLeft = () => {
 
 
 // View ------------------------
-// 기본은 웹으로 되어있고 다른 분야 클릭시 
-// 그 분야 true. 다른 분야 false.
-// true가 된 분야만 보여주기.
-// 배열만들어서 위에 처럼 해야할까? 다른 방법으로 works를 구별할 방법은 없을까?
 const workRender = worksData =>{
   const works = document.getElementById('works');
   works.innerHTML = '';
@@ -146,9 +140,5 @@ const workRender = worksData =>{
     spaceWorkInfo.innerText = workData.workInfo;
     works.appendChild(spaceWorkInfo);
   });
-  
-  // const workName = document.getElementById('workName');
-  // const workImg = document.getElementById('workImg');
-  // const workInfo = document.getElementById('workInfo'); 
 }
 web()
