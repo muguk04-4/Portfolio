@@ -15,6 +15,7 @@ body{
 .hidden{
   display: none;
 }
+/* 아래꺼 못쓰고 있음 */
 .clicked{
   background-color: aqua;
 }

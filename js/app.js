@@ -120,18 +120,34 @@ const workRender = worksData =>{
     // 이미지 배열이라서 안뜸. 이걸 풀어줄 무언가가 필요함
     const spaceWorkImg = document.createElement('div');
     spaceWorkImg.className = 'work-img';
+    const img = document.createElement('img');
+    let cnt = 0;
+    img.src = workData.workImg[cnt];
+    spaceWorkImg.appendChild(img);
     const leftChange = document.createElement('div');
     leftChange.className = 'left-change';
-    leftChange.onclick = imgChangeLeft;
+    leftChange.onclick = function (){
+      if((cnt-1) === -1){
+        cnt = workData.workImg.length - 1;
+      } else{
+        cnt = cnt - 1;
+      }
+      console.log(cnt);
+      img.src = workData.workImg[cnt];
+    };
     spaceWorkImg.appendChild(leftChange);
     const rightChange = document.createElement('div');
     rightChange.className = 'right-change';
-    rightChange.onclick = imgChangeRight;
+    rightChange.onclick = function (){
+      if((cnt+1) === workData.workImg.length){
+        cnt = 0;
+      } else{
+        cnt = cnt + 1;
+      }
+      console.log(cnt);
+      img.src = workData.workImg[cnt];
+    };
     spaceWorkImg.appendChild(rightChange);
-    const img = document.createElement('img');
-    //img.id = 'workImg';
-    img.src = workData.workImg;
-    spaceWorkImg.appendChild(img);
     works.appendChild(spaceWorkImg);
 
     const spaceWorkInfo = document.createElement('div');
