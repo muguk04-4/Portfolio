@@ -1,43 +1,43 @@
 // Model ------------------------
 // 여기다 만들어도 되지만 차라리 컨트롤러쪽에 만들어도 되지 않을까? 고민중
 const webData = [{
-  workName: '로스트아크 길드매니저',
+  workName: '로스트아크 길드매니저(개발중)',
   workImg: ['img/work_img/web/lostark_guildmanager1.jpg'],
-  workInfo: '이것은 로아 길드매니저',
+  workInfo: '온라인 게임 "로스트아크"의 길드 컨텐츠 편의성을 개선하기 위해 개발 중인 웹사이트이다. 현재 Figma로 디자인 중이며 처음으로 js프레임워크를 사용해서 개발할 예정이다.',
 }, {
   workName: '워프레임 정보 페이지',
   workImg: ['img/work_img/web/warframe1.jpg', 'img/work_img/web/warframe2.jpg', 'img/work_img/web/warframe3.jpg'],
-  workInfo: '이것은 워프레임 페이지',
+  workInfo: '온라인 게임 "워프레임"에 관하여 간단한 소개 및 잡다한 정보를 요약, 정리해서 제공하는 웹페이지이다. 과제 제출용으로 혼자 제작하였고 제작하며 웹에 대한 흥미를 느끼게 되었다.',
 }];
 
 const gameData = [{
   workName: 'Rewot',
   workImg: ['img/work_img/game/rewot1.png', 'img/work_img/game/rewot2.png', 'img/work_img/game/rewot3.png', 'img/work_img/game/rewot4.png'],
-  workInfo: '이것은 리웟',
+  workInfo: '3D 플랫포머 게임으로 암울한 결말을 맞이한 시공간이 보관된 탑에 플레이어가 진입하여 퍼즐을 풀며 결말을 고쳐나가는 내용이다. 청소년 게임 개발 동아리에서 개발하였고 기획과 3D모델링에 처음 참여하였다.',
 }, {
-  workName: 'Loveholics',
+  workName: 'Loveholics(개발중)',
   workImg: ['img/work_img/game/loveholics1.jpg', 'img/work_img/game/loveholics2.jpg', 'img/work_img/game/loveholics3.jpg'],
-  workInfo: '이것은 러브 홀릭스',
+  workInfo: '여성향 미연시 게임이다. 웹기반 게임엔진 "모노가타리"로 개발되고 있으며 팀에서 메인 개발을 맡고 있다. 이 팀은 청소년 지원 사업에 의해 만들어진 동아리의 각각 팀장들과 팀원들로 이루어져있다.',
 }, {
-  workName: 'Aquares',
+  workName: 'Aquares(개발 중지)',
   workImg: ['img/work_img/game/aquares1.png', 'img/work_img/game/aquares2.png', 'img/work_img/game/aquares3.png', 'img/work_img/game/aquares4.png'],
-  workInfo: '이것은 아쿠아레스',
+  workInfo: '지구온난화로 해수면이 상승하게 되어 바다의 시대를 맞이하게 된다. 이후 바다의 생태계가 다양한 바다 생물들로 가득차게 되었다. 하지만 너무 생물들이 많아 부대끼며 사는 것에 몇몇 바다 생물들이 화가 나기 시작했다. 이 게임은 그 용감한 바다 생물들 중 하나가 되어 얼마 안남은 육지를 차지하기 위해 싸우는 게임이다. 기획과 3D모델링으로 참여하였으며 프로젝트 진행 중 버그들과 기획의 허점 등 각종 문제들로 인해 개발이 중지 되었지만 그로 인해 모든 프로젝트 중 느낀 것과 배울 것이 가장 많았던 프로젝트이기도 하다.',
 }];
 
 const modelData = [{
-  workName: 'rewot의 모델링',
+  workName: 'Rewot의 모델링',
   workImg: ['img/work_img/model/model_rewot1.png', 'img/work_img/model/model_rewot2.png', 'img/work_img/model/model_rewot3.png', 'img/work_img/model/model_rewot4.png'],
-  workInfo: '이것은 모델링 리웟',
+  workInfo: '제작에 참여했던 게임 "Rewot"의 모델링 작업 사진이다.',
 }, {
   workName: 'Aquares의 모델링',
   workImg: ['img/work_img/model/model_aquares1.png', 'img/work_img/model/model_aquares2.png', 'img/work_img/model/model_aquares3.png'],
-  workInfo: '이것은 모델링 아쿠아레스',
+  workInfo: '제작에 참여했던 게임 "Aquares"의 모델링 작업 사진이다.',
 }];
 
 const androidData = [{
   workName: '마침표',
   workImg: ['img/work_img/android/machim1.png', 'img/work_img/android/machim2.png', 'img/work_img/android/machim3.png', 'img/work_img/android/machim4.png'],
-  workInfo: '이것은 마침표 어플',
+  workInfo: '기업의 재무재표를 분석, 요약, 정리한 것을 토대로 시각화하여 사용자에게 제공하고 취업준비생에게 앱에 등록된 취업멘토들을 소개시켜주는 안드로이드 어플리케이션이다. 처음으로 맡은 안드로이드 프로젝트이며 대학교 공모전 참여를 위해 제작하였다. 다른 학과의 사람들과 협업, 소통해볼 수 있어 새로웠고 프로젝트 진행 중 실력이 부족했던 점 때문에 문제가 발생하였으며 이로 인해 더 노력하고 공부해야겠다는 욕구를 강하게 느끼게 해준 프로젝트이다.',
 }];
 
 // Controller ------------------------
