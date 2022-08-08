@@ -59,11 +59,14 @@
   flex-direction: column;
   border-radius: 0px 0px 10px 10px;
 }
+.works :first-child{
+  border-top: none;
+}
 .work-name{
-  border-bottom: 1px solid red;
+  border-top: 1px solid red;
   text-align: center;
   font-size: 20pt;
-  padding: 7px;
+  padding: 20px 10px 4px 10px;
   margin: 13px;
 }
 .work-img{
@@ -110,7 +113,7 @@
   z-index: 0;
 }
 .work-info{
-  padding: 6px 20px 20px 20px;
+  padding: 8px 25px 20px 25px;
   line-height: 23px;
   font-size: 13pt;
 }
