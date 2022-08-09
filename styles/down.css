@@ -62,6 +62,9 @@
 .works :first-child{
   border-top: none;
 }
+.works :last-child{
+  margin-bottom: 40px;
+}
 .work-name{
   border-top: 1px solid red;
   text-align: center;
