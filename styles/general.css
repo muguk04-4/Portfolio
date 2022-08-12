@@ -16,10 +16,11 @@ body{
   display: none;
 }
 
-/* 색상 */
+/* 색상 변수 */
 :root {
   --font-color: black;
   --background-color: brown;
+  --container-color: brown;
   --border-color: brown;
   --point-color: brown;
 }
