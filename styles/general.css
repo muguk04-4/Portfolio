@@ -1,6 +1,7 @@
 body{
-  background-color: white;
+  background-color: var(--background-color);
   margin: 0;
+  color: var(--font-color);
 }
 .container{
   display: flex;
@@ -8,7 +9,7 @@ body{
   margin: 20px auto auto auto;
   min-width: 550px;
   max-width: 700px;
-  color: var(--bg-color);
+  
 }
 
 /* 부여용 클래스 */
@@ -18,9 +19,10 @@ body{
 
 /* 색상 변수 */
 :root {
-  --font-color: black;
-  --background-color: brown;
-  --container-color: brown;
-  --border-color: brown;
-  --point-color: brown;
+  --font-color: yellow;
+  --background-color: black;
+  --container-color: green;
+  --border-color: red;
+  --point-color: blue;
+  --modify-color: white;
 }

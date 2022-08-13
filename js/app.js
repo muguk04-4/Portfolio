@@ -1,5 +1,4 @@
 // Model ------------------------
-// 여기다 만들어도 되지만 차라리 컨트롤러쪽에 만들어도 되지 않을까? 고민중
 const webData = [{
   workName: '로스트아크 길드매니저(개발중)',
   workImg: ['img/work_img/web/lostark_guildmanager1.jpg'],
@@ -56,15 +55,13 @@ const introTranslate = event =>{
   }
 }
 // C: Change works
-//버튼 입력시 해당 분야의
-//제목, 사진, 내용 랜더링
 const workTabWeb = document.getElementById('worksWeb');
 const workTabGame = document.getElementById('worksGame');
 const workTabModel = document.getElementById('worksModel');
 const workTabAndroid = document.getElementById('worksAndroid');
+// ----------- 색깔 변경 -------------
 const SELECTED = '#22FF33';
-const DESELCTED = 'white';
-// ------------ 이거 추가해야됨 ---------------
+const DESELCTED = 'green';
 const web = () => {
   workTabWeb.style.backgroundColor = SELECTED;
   workTabGame.style.backgroundColor = DESELCTED;
@@ -93,17 +90,6 @@ const android = () => {
   workTabAndroid.style.backgroundColor = SELECTED;
   workRender(androidData);
 }
-// C: Change Images
-// 우측 클릭시 배열+1, 좌측 클릭시 배열-1
-// 어떤 배열인지는 이벤트로 받아야 할지도?
-// 제일 마지막에 할 이벤트처리
-const imgChangeRight = () => {
-  console.log('오른쪽으로');
-}
-const imgChangeLeft = () => {
-  console.log('왼쪽으로');
-}
-
 
 // View ------------------------
 const workRender = worksData =>{

@@ -13,6 +13,16 @@
   display: flex;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+}
+.work-category ul li{
+  font-weight: 500;
+  font-size: 13pt;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+  padding: 7px;
 }
 .work-category ul li:nth-child(1){
   width: 80px;
@@ -31,25 +41,15 @@
 }
 .work-category ul li:nth-child(5){
   flex: 1;
-  background-color: white;
   border: none;
-  border-bottom: 1px solid red;
-}
-.work-category li{
-  font-weight: 500;
-  font-size: 13pt;
-  text-align: center;
-  border: 1px solid red;
-  border-radius: 10px 10px 0px 0px;
-  border-bottom: none;
-  padding: 7px;
-  background-color: white;
+  border-bottom: 1px solid var(--border-color);
 }
 
+
 .works{
-  background-color: white;
+  background-color: #22FF33;
   font-family: 'Nanum Gothic', sans-serif;
-  border: 1px red solid;
+  border: 1px var(--border-color) solid;
   border-top: none;
   box-sizing: border-box;
   padding: 0;
@@ -66,7 +66,7 @@
   margin-bottom: 40px;
 }
 .work-name{
-  border-top: 1px solid red;
+  border-top: 1px solid var(--border-color);
   text-align: center;
   font-size: 20pt;
   padding: 20px 10px 4px 10px;
@@ -126,13 +126,13 @@
 .contact{
   margin-top: 20px;
   padding: 15px;
-  background-color: white;
-  border: 1px solid red;
+  background-color: var(--container-color);
+  border: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
 }
-.contact >span{
+.contact > span{
   display: flex;
   align-items: center;
   
@@ -151,7 +151,6 @@
 .sns{
   margin-top: 10px;
   padding: 10px;
-  background-color: white;
   display: flex;
   margin-top: 0px;
 }
@@ -161,7 +160,8 @@
   flex: 1;
   align-items: center;
   border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid var(--border-color);
+  background-color: var(--modify-color);
   padding: 5px;
   margin: 5px;
   text-decoration: none;
@@ -170,10 +170,9 @@
   text-decoration: none;
 }
 
-
 /* 하단 버전 바 */
 .footer{
-  background-color: rgb(108, 108, 108);
+  background-color: rgba(108, 108, 108, 0.589);
   height: 40px;
   width: auto;
   margin-top: 25px;
