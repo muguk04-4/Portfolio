@@ -60,8 +60,8 @@ const workTabGame = document.getElementById('worksGame');
 const workTabModel = document.getElementById('worksModel');
 const workTabAndroid = document.getElementById('worksAndroid');
 // ----------- 색깔 변경 -------------
-const SELECTED = '#22FF33';
-const DESELCTED = 'green';
+const SELECTED = 'green';
+const DESELCTED = '#22FF33';
 const web = () => {
   workTabWeb.style.backgroundColor = SELECTED;
   workTabGame.style.backgroundColor = DESELCTED;

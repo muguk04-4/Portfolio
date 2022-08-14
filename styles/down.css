@@ -47,7 +47,7 @@
 
 
 .works{
-  background-color: #22FF33;
+  background-color: var(--container-color);
   font-family: 'Nanum Gothic', sans-serif;
   border: 1px var(--border-color) solid;
   border-top: none;
