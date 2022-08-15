@@ -9,7 +9,6 @@ body{
   margin: 20px auto auto auto;
   min-width: 550px;
   max-width: 700px;
-  
 }
 
 /* 부여용 클래스 */
@@ -19,10 +18,11 @@ body{
 
 /* 색상 변수 */
 :root {
-  --font-color: yellow;
-  --background-color: black;
-  --container-color: green;
-  --border-color: red;
-  --point-color: blue;
+  --font-color: #2c353e;
+  --background-color: #eeeeee ;
+  --container-color: white ;
+  --border-color: #474539;
+  --point-color: #fbae61;
   --modify-color: white;
+  --button-color: #474539;
 }
