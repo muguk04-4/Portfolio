@@ -133,7 +133,6 @@ const workRender = worksData =>{
       } else{
         cnt = cnt - 1;
       }
-      console.log(cnt);
       img.src = workData.workImg[cnt];
     };
     spaceWorkImg.appendChild(leftChange);
@@ -152,7 +151,6 @@ const workRender = worksData =>{
     works.appendChild(spaceWorkImg);
 
     const spaceWorkInfo = document.createElement('div');
-    //spaceWorkInfo.id = 'workInfo';
     spaceWorkInfo.className = 'work-info';
     spaceWorkInfo.innerText = workData.workInfo;
     works.appendChild(spaceWorkInfo);
