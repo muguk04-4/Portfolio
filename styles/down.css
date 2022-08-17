@@ -130,8 +130,15 @@
 .contact > span{
   display: flex;
   align-items: center;
-  
   padding-left: 15px;
+}
+.contact button{
+  border: 1px solid var(--border-color);
+  background-color: var(--container-color);
+  border-radius: 5px;
+  width: 45px;
+  height: 20px;
+
 }
 .icon{
   width: 25px;
