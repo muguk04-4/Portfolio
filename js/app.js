@@ -108,11 +108,8 @@ const android = () => {
   workRender(androidData);
 }
 const copyButton = () => {
-  // 클립보드 복사 코드 집어넣기
+  
   alert('Copied!');
-}
-const openTalk = () => {
-  //오픈카톡 링크?
 }
 
 // View ------------------------
