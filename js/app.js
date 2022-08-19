@@ -107,9 +107,26 @@ const android = () => {
   workTabAndroid.style.color = FONT_SELECTED;
   workRender(androidData);
 }
-const copyButton = () => {
-  
+const copyTel = () => {
+  const tel = document.getElementById('tel');
+  const telValue = '010-2979-1699';
+  copyProcess(tel, telValue);
+}
+const copyEmail = () => {
+  const mail = document.getElementById('mail');
+  const mailValue = 'garuru7080@gmail.com';
+  copyProcess(mail, mailValue);
+}
+const copyProcess = (ta, tv) => {
+  const text = document.createElement('input');
+  text.id = 'no';
+  text.value = tv;
+  ta.appendChild(text);
+  text.select();
+  document.execCommand('copy');
   alert('Copied!');
+  const del = document.getElementById('no');
+  ta.removeChild(del);
 }
 
 // View ------------------------
