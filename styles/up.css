@@ -1,6 +1,6 @@
 /* 상단 프로필 */
 .profile{
-  font-family: 'Nanum Gothic', sans-serif;
+  
   background-color: var(--container-color);
   border: 1px solid var(--border-color);
   display: flex;
@@ -23,16 +23,22 @@
 .profile-info h3{
   font-size: 18pt;
   letter-spacing: 10px;
-  padding-left: 25px;
+  padding-left: 10px;
   padding-bottom: 0px;
   margin-top: 10px;
 }
-.profile-info h4:nth-child(2){
+.profile-info h4{
+  font-size: 15pt;
   padding-left: 10px;
+}
+.profile-info h4:nth-child(2){
   padding-bottom: 0px;
 }
-.profile-info h4{
+.profile-info h4:nth-child(3){
   padding-left: 10px;
+  padding-top: 5px;
+  font-size: 12pt;
+  padding-bottom: 0px;
 }
 
 .interest{
@@ -93,7 +99,6 @@
   margin-bottom: 20px;
   padding: 25px 30px 25px 30px;
   background-color: var(--container-color);
-  font-family: 'Nanum Gothic', sans-serif;
   font-size: 13pt;
   line-height: 145%;
   border: 1px solid var(--border-color);

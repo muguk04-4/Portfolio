@@ -1,6 +1,5 @@
 /* 중단 작업 목록 */
 .work-category{
-  font-family: 'Nanum Gothic', sans-serif;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 0;
@@ -43,7 +42,6 @@
 
 .works{
   background-color: var(--container-color);
-  font-family: 'Nanum Gothic', sans-serif;
   border: 1px var(--border-color) solid;
   border-top: none;
   box-sizing: border-box;
@@ -127,7 +125,7 @@
   flex-direction: column;
   border-radius: 10px;
 }
-.contact > span{
+.contact span{
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -145,7 +143,9 @@
   color: white;
 }
 .icon{
+  object-fit: contain;
   width: 25px;
+  height: 18px;
   padding: 5px;
   opacity: 75%;
 }
