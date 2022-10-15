@@ -165,7 +165,6 @@ const workRender = worksData =>{
       } else{
         cnt = cnt + 1;
       }
-      console.log(cnt);
       img.src = workData.workImg[cnt];
     };
     spaceWorkImg.appendChild(rightChange);
