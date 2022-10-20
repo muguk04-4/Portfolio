@@ -1,19 +1,18 @@
 /* 상단 프로필 */
 .profile{
-  
-  background-color: var(--container-color);
-  border: 1px solid var(--border-color);
   display: flex;
   flex-direction: row;
+  background-color: var(--container-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px 10px 0px 0px;
 }
 .profile-info{
-  width: 396px;
-  flex: 1;
   display: flex;
-  padding-left: 30px;
   flex-direction: column;
   vertical-align: top;
+  flex: 1;
+  padding-left: 30px;
+  width: 396px;
 }
 .profile-info >*{
   margin-top: 0;
@@ -21,15 +20,15 @@
   padding: 10px 0px 10px 0px;
 }
 .profile-info h3{
-  font-size: 18pt;
-  letter-spacing: 10px;
+  margin-top: 10px;
   padding-left: 10px;
   padding-bottom: 0px;
-  margin-top: 10px;
+  font-size: 18pt;
+  letter-spacing: 10px;
 }
 .profile-info h4{
-  font-size: 15pt;
   padding-left: 10px;
+  font-size: 15pt;
 }
 .profile-info h4:nth-child(2){
   padding-bottom: 0px;
@@ -37,8 +36,8 @@
 .profile-info h4:nth-child(3){
   padding-left: 10px;
   padding-top: 5px;
-  font-size: 12pt;
   padding-bottom: 0px;
+  font-size: 12pt;
 }
 
 .interest{
@@ -49,12 +48,12 @@
   padding-left: 10px;
 }
 .interest >*{
+  padding: 5px;
+  font-weight: 500;
   background-color: var(--container-color);
   border-style: solid;
   border-width: 1px;
   border-radius: 7px;
-  padding: 5px;
-  font-weight: 500;
 }
 .interest span:nth-child(1){
   color: rgb(115, 39, 187);
@@ -81,42 +80,43 @@
   box-shadow: 0px 0px 1px black;
 }
 .profile-img{
-  border-radius: 50%;
-  max-width: 200px;
-  max-height: 200px;
   display: inline-block;
   object-fit: cover;
   object-position: center;
   box-sizing: border-box;
   padding: 8px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
   flex-shrink: 0;
 }
 
 
 /* 상단 자기소개 */
 .introduce{
+  position: relative;
+  box-sizing: border-box;
   margin-top: -1px;
   margin-bottom: 20px;
   padding: 25px 30px 25px 30px;
-  background-color: var(--container-color);
   font-size: 13pt;
   line-height: 145%;
+  background-color: var(--container-color);
   border: 1px solid var(--border-color);
   border-radius: 0px 0px 10px 10px;
-  box-sizing: border-box;
-  position: relative;
+  
 }
 .introduce button{
-  width: 45px;
   position: absolute;
   right: -1px;
   top: 0px;
   box-sizing: border-box;
-  border-right: none;
-  border-top: none;
-  border-left: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  width: 45px;
   background-color: var(--button-color);
   color: white;
+  border-top: none;
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   border-radius: 0px 0px 0px 5px;
 }
