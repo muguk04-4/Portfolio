@@ -2,7 +2,7 @@
 const webData = [{
   workName: '로스트아크 길드매니저(개발중)',
   workImg: ['img/work_img/web/lostark_guildmanager1.jpg'],
-  workInfo: '\u00A0 온라인 게임 "로스트아크"의 길드 컨텐츠 편의성을 개선하기 위해 개발 중인 웹사이트이다. 현재 Figma로 디자인 중이며 처음으로 js프레임워크를 사용해서 개발할 예정이다.',
+  workInfo: '\u00A0 온라인 게임 "로스트아크"의 길드 컨텐츠 편의성을 개선하기 위해 개발 중인 웹사이트이다. 현재 Figma로 디자인 중이며 처음으로 Vue.js, Express, Mysql을 사용하여 개발하고 있다.',
 }, {
   workName: '워프레임 정보 페이지',
   workImg: ['img/work_img/web/warframe1.jpg', 'img/work_img/web/warframe2.jpg', 'img/work_img/web/warframe3.jpg'],
