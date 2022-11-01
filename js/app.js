@@ -12,7 +12,7 @@ const webData = [{
 const gameData = [{
   workName: 'Rewot',
   workImg: ['img/work_img/game/rewot1.png', 'img/work_img/game/rewot2.png', 'img/work_img/game/rewot3.png', 'img/work_img/game/rewot4.png'],
-  workInfo: '\u00A03D 플랫포머 게임으로 암울한 결말을 맞이한 시공간이 보관된 탑에 플레이어가 진입하여 퍼즐을 풀며 결말을 고쳐나가는 내용이다. 청소년 게임 개발 동아리에서 개발하였고 기획과 3D모델링에 처음 참여하였다.',
+  workInfo: '\u00A03D 플랫포머 게임으로 암울한 결말을 맞이한 시공간이 보관된 탑에 플레이어가 진입하여 퍼즐을 풀며 결말을 고쳐나가는 내용이다. 청소년 게임 개발 동아리에서 개발하였고 기획과 3D모델링 파트로 처음 참여하였다.',
 }, {
   workName: 'Loveholics(개발중)',
   workImg: ['img/work_img/game/loveholics1.jpg', 'img/work_img/game/loveholics2.jpg', 'img/work_img/game/loveholics3.jpg'],
