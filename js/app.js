@@ -16,11 +16,16 @@ const gameData = [{
 }, {
   workName: 'Loveholics(개발중)',
   workImg: ['img/work_img/game/loveholics1.jpg', 'img/work_img/game/loveholics2.jpg', 'img/work_img/game/loveholics3.jpg'],
-  workInfo: '\u00A0여성향 미연시 게임이다. 웹기반 게임엔진 "모노가타리"로 개발되고 있으며 팀에서 메인 개발을 맡고 있다. 이 팀은 청소년 지원 사업에 의해 만들어진 동아리의 각각 팀장들과 팀원들로 이루어져있다.',
+  workInfo: '\u00A0여성향 미연시 게임이다. 웹기반 게임엔진 "Monogatari"로 개발되고 있으며 팀에서 메인 개발을 맡고 있다. 이 팀은 청소년 지원 사업에 의해 만들어진 동아리의 각각 팀장들과 팀원들로 이루어져있다.',
 }, {
-  workName: 'Aquares(개발 중지)',
+  workName: 'Aquares',
   workImg: ['img/work_img/game/aquares1.png', 'img/work_img/game/aquares2.png', 'img/work_img/game/aquares3.png', 'img/work_img/game/aquares4.png'],
-  workInfo: '\u00A0지구온난화로 해수면이 상승하게 되어 바다의 시대를 맞이하게 된다. 이후 바다의 생태계가 다양한 바다 생물들로 가득차게 되었다. 하지만 너무 생물들이 많아 부대끼며 사는 것에 몇몇 바다 생물들이 화가 나기 시작했다. 이 게임은 그 용감한 바다 생물들 중 하나가 되어 얼마 안남은 육지를 차지하기 위해 싸우는 게임이다. 기획과 3D모델링으로 참여하였으며 프로젝트 진행 중 버그들과 기획의 허점 등 각종 문제들로 인해 개발이 중지 되었지만 그로 인해 모든 프로젝트 중 느낀 것과 배울 것이 가장 많았던 프로젝트이기도 하다.',
+  workInfo: '\u00A0지구온난화로 해수면이 상승하게 되어 바다의 시대를 맞이하게 된다. 이후 바다의 생태계가 다양한 바다 생물들로 가득차게 되었다. 하지만 너무 생물들이 많아 부대끼며 사는 것에 몇몇 바다 생물들이 화가 나기 시작했다. 이 게임은 그 용감한 바다 생물들 중 하나가 되어 얼마 안남은 육지를 차지하기 위해 싸우는 게임이다. 기획과 3D모델링으로 참여하였으며 프로젝트 진행 중 버그들과 기획의 허점 등 각종 문제들로 인해 공식 배포에는 실패하였지만 모든 프로젝트 중 느낀 것과 배울 것이 가장 많았던 프로젝트이기도 하다.',
+}, {
+  //내용과 캡쳐 필요 ----------------------------
+  workName: 'Demen',
+  workImg: ['img/work_img/game/aquares1.png', 'img/work_img/game/aquares2.png', 'img/work_img/game/aquares3.png', 'img/work_img/game/aquares4.png'],
+  workInfo: '\u00A0',
 }];
 
 const modelData = [{
