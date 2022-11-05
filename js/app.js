@@ -25,7 +25,7 @@ const gameData = [{
   //내용과 캡쳐 필요 ----------------------------
   workName: 'Demen',
   workImg: ['img/work_img/game/aquares1.png', 'img/work_img/game/aquares2.png', 'img/work_img/game/aquares3.png', 'img/work_img/game/aquares4.png'],
-  workInfo: '\u00A0',
+  workInfo: '\u00A0게임 기획과 3D 모델링, 프로젝트 관리에 참여하였다.',
 }];
 
 const modelData = [{
